@@ -1,0 +1,38 @@
+.full-page-overlay-search {
+  width: 100vw;
+  height: 100vh;
+  background-color: #12086f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form.search-from-site {
+    input.search-from-site--input {
+      border: none;
+      outline: none;
+      background-color: white;
+      font-size: 24px;
+      line-height: 1;
+      color: #262626;
+      width: 60vw;
+      padding: 5px;
+    }
+    input.search-from-site--submit {
+      background-color: #262626;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 24px;
+      line-height: 1;
+      padding: 8px;
+    }
+  }
+
+  .search-from-site--live-results {
+    margin-top: 25px;
+    width: 60vw;
+    height: 500px;
+    background-color: white;
+  }
+}
