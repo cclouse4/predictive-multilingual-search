@@ -4,7 +4,9 @@ add_action( 'wp_ajax_live_search_from_site', 'live_search_from_site_callback' );
 add_action( 'wp_ajax_nopriv_live_search_from_site', 'live_search_from_site_callback' );
 
 function live_search_from_site_callback() {
+  // Including TranslatePress translations
   add_filter('trp_force_search', '__return_true');
+
   if($_POST['s'] != '') {    
     $search  = $_POST['s'];
 
